@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-title {
+    background: rgb(0, 100, 0); /* Dark green */
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.nav-links {
+    background: rgb(0, 128, 0); /* Slightly lighter green */
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Home Section */
+#home {
+    height: 100vh; /* Full screen */
+    background: url("../images/background.png") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* About Us Section */
+#about {
+    height: 100vh;
+    background: url("../images/about us.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Products Section */
+#products {
+    height: 100vh;
+    background: url("../images/product.jpeg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Processing Section */
+#processing {
+    height: 100vh;
+    background: url("../images/process.png") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Contact Section */
+#contact {
+    display: flex;
+    height: calc(100vh - 120px); /* Adjusted to remove bottom gap */
+    align-items: stretch;
+}
+
+.contact-container {
+    display: flex;
+    width: 100%;
+    height: 100%; /* Ensures it spans full height */
+}
+
+.contact-image {
+    flex: 50%;
+    height: 100%;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits without distortion */
+}
+
+/* Contact Section */
+#orderForm {
+    flex: 50%;
+    background: #f0f8ff; /* Light blue background */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Remove number input arrows for the Quantity field */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* For Webkit browsers like Chrome and Edge */
+    margin: 0;
+}
+
+input[type="number"] {
+    appearance: none; /* Standard property for all browsers */
+    margin: 0;
+}
+
+/* Text Overlay (Optional for About/Products/Processing) */
+.text-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Transparent black */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    background: rgb(0, 100, 0); /* Dark green */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
